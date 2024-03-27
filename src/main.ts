@@ -10,7 +10,7 @@ async function bootstrap() {
   .setTitle('TaskManager')
   .setDescription('The Task Manager API description')
   .setVersion('1.0')
-  .addTag('lookmeal')
+  .addTag('TaskManager')
   .addBearerAuth({
     description: 'Enter your JWT token',
     type: 'http',
