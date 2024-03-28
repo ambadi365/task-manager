@@ -1,0 +1,19 @@
+# Specify the version of Docker Compose
+version: "3"
+
+# Define the services that compose your application
+services:
+  # Service for running the Node.js application
+  node:
+    # Specify the container name
+    container_name: task-manager
+    
+    # Build the Docker image from the current directory
+    build: .  
+    
+    # Command to run inside the container
+    command: npm run start:prod  
+    
+    # Expose port 3000 on the host and map it to port 3000 in the container
+    ports:
+      - "3000:3000"

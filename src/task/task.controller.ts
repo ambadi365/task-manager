@@ -11,7 +11,7 @@ export class TaskController {
 
 
  @Get()
- getAlltasks(): string{
+ getAlltasks(){
     return  this.taskservice.getAlltasks();
 }
 
